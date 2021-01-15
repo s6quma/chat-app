@@ -1,12 +1,12 @@
 # テーブル設計
 
-## usersテーブル
+## users テーブル
 
-| Column    | Type    | Options     |
-| --------- | ------- | ----------- |
-| name      | string  | null: fales |
-| email     | string  | null: fales |
-| password  | string  | null: fales |
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| email    | string | null: false |
+| password | string | null: false |
 
 ### Association
 
@@ -14,11 +14,11 @@
 - has_many :rooms, through: room_users
 - has_many :messages
 
-## roomsテーブル
+## rooms テーブル
 
-| Column | Type    | Options     |
-| ------ | ------- | ----------- |
-| name   | string  | null: fales |
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
 
 ### Association
 
@@ -26,27 +26,27 @@
 - has_many :users, through: room_users
 - has_many :messages
 
-## room_usersテーブル
+## room_users テーブル
 
-| Column    | Type      | Options                       |
-| --------- | --------- | ----------------------------- |
-| user      | reference | null:fales, foreign_key: true |
-| room      | reference | null:fales, foreign_key: true |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :room
 - belongs_to :user
 
-## messagesテーブル
+## messages テーブル
 
-| Column    | Type      | Options                       |
-| --------- | --------- | ----------------------------- |
-| content   | string    | nll: fales, foreign_key: true |
-| user      | reference | null:fales, foreign_key: true |
-| room      | reference | null:fales, foreign_key: true |
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| content | string     |                                |
+| user    | references | null: false, foreign_key: true |
+| room    | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :room
-- berongs_tO :user
+- belongs_to :user
