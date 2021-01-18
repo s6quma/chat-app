@@ -1,5 +1,7 @@
 <div class="chat-header">
-  <div class="chat-title">hogefuga</div>
+  <div class="chat-title">
+    <%= @room.name%>
+  </div>
   <div class="chat-close-btn">
     <a href="#">チャットを終了する</a>
   </div>
@@ -21,7 +23,6 @@
     </div>
   </div>
 
-<div class="message">
   <%= render partial: 'message', collection: @messages %>
 </div>
 
