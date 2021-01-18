@@ -20,22 +20,11 @@
       </div>
     </div>
   </div>
-  <div class="message">
-    <div class="upper-message">
-        <div class="user-message">
-          Wend
-        </div>
-        <div class="message-date">
-          2021/01/01(Tue) 00:00:01
-        </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        hello
-      </div>
-    </div>
-  </div>
+
+<div class="message">
+  <%= render partial: 'message', collection: @messages %>
 </div>
+
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
     <div class="form-input">
      <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
