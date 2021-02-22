@@ -79,7 +79,7 @@
 .messages {
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
-  padding: 46px 40px 0;
+  padding: 46px 50px 0;
   overflow: scroll;
 }
 
@@ -88,21 +88,27 @@
   padding: 10px 0;
 }
 
-.user-message {
-  font-size: 16px;
-  color: #434a54;
-  padding-right: 10px;
+.message-user {
+  font-size: 20px;
+  color: gray;
+  padding-right: 40px;
 }
 
 .message-date {
-  font-size: 12px;
+  font-size: 16px;
   color: #999;
 }
 
 .lower-message {
-  font-size: 14px;
+  font-size: 24px;
   color: #434a54;
-  margin-bottom: 40px;
+  margin: 10px 30px 40px;
+}
+
+.lower-sub-message {
+  font-size: 16px;
+  color: #7d7e81;
+  margin: 5px 0 40px;
 }
 
 .form {
@@ -148,3 +154,4 @@
 .hidden {
   display: none;
 }
+

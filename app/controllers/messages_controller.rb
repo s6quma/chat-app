@@ -16,6 +16,25 @@ class MessagesController < ApplicationController
     end
   end
 
+  def destroy
+    @room = Room.find(params[:room_id])
+    message = Message.find(params[:id])
+    messages = @room.messages.includes(:user)
+    if message.destroy
+      redirect_to room_messages_path(@room)
+    else
+      render :index
+    end
+  end
+
+  # def split
+  #   number = @room.user.length
+  #   @messages = @room.messages.includes(:user)
+  #   @message.content / number
+  #   @split = Message.split
+  # end
+    
+
   private
   def message_params
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)

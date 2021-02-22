@@ -12,6 +12,7 @@ RSpec.describe Message, type: :model do
 
     it 'contentが空でも保存できること' do
       @message.content = nil
+      binding.pry
       expect(@message).to be_valid
     end
 

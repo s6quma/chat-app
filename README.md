@@ -16,15 +16,19 @@
 
 ## rooms テーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
+| Column      | Type    | Options     |
+| ----------- | ------- | ----------- |
+| name        | string  | null: false |
+| price       | float   | null: false |
+| currency_id | integer | null: false |
 
 ### Association
 
 - has_many :room_users
 - has_many :users, through: room_users
 - has_many :messages
+(Active hash)
+- belongs_to :currency
 
 ## room_users テーブル
 
@@ -50,3 +54,8 @@
 
 - belongs_to :room
 - belongs_to :user
+
+
+(Active hash)
+- currency
+
