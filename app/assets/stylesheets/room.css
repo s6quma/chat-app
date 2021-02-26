@@ -146,3 +146,12 @@ select {
 .field_with_errors {
   display: contents;
 }
+
+.error-alert {
+  padding: 30px 0 10px;
+}
+ .error-message {
+  color: rgb(69, 66, 27);
+  font-size: 16px;
+  text-align: center;
+ }

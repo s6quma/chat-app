@@ -106,9 +106,6 @@
 
 #error_explanation {
   margin: 20px 0;
-  padding: 20px 30px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
 }
 #error_explanation h2 {
   margin-bottom: 10px;
@@ -116,12 +113,9 @@
   font-size: 14px;
 }
 #error_explanation ul {
-  margin: 0;
-  padding-left: 17px;
-  list-style: square;
+  list-style: none;
 }
 #error_explanation li {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
+  color: rgb(69, 66, 27);
+  font-size: 15px;
 }

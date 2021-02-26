@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      room: ルーム
+    attributes:
+      room:
+        name: グループ名
+        price: レート
+        currency_id: 通貨
+        
