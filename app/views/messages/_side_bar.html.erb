@@ -3,7 +3,9 @@
     <%= link_to current_user.name, edit_user_path(current_user)%>
   </div>
   <div class="chat-create-btn">
-    <%= link_to 'チャット作成', new_room_path %>
+    <a href="/rooms/new">
+      <i class="fas fa-user-friends fa-1x"></i>
+    </a>
   </div>
 </div>
 

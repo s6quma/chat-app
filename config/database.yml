@@ -51,4 +51,4 @@ production:
   <<: *default
   database: you_owe_me_production
   username: you_owe_me
-  password: <%= ENV['CHAT_APP_DATABASE_PASSWORD'] %>
+  password: <%= ENV['you_owe_me_DATABASE_PASSWORD'] %>

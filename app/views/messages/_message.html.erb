@@ -1,17 +1,12 @@
 <div class="message">
-  <div class="more">
-    <span><%= image_tag 'arrow_top.png' %></span>
-    <ul class="more_list">
-      <li>
-        <%= link_to '削除', room_message_path(@room, message) , method: :delete %>
-      </li>
-      <li>
-        <%= link_to '期日', "#",  class: "due-date" %>
-      </li>
-      <li>
-        <%= check_box_tag :check1 %>
-        <%= label_tag :check1, "支払い済み" %>
-      </li>
+  <div class="right_content">
+   <ul class="menu">
+   <li><a href=""><i class="fas fa-angle-down fa-2x"></i></a>
+      <ul>
+         <li><%= link_to '削除', room_message_path(@room, message) , method: :delete, class: "right_list" %></li>
+         <li> <%= link_to '編集', "#" ,class: "right_list" %></li>
+      </ul>
+    </li>
     </ul>
   </div>
   <div class="upper-message">
@@ -29,16 +24,16 @@
   <div class="lower-message">
     <div class="message-content">
       <!-- 投稿したメッセージ内容を記述する -->
-      <%= "YOU ON ME!" %><br>
       <% if message.content %>
-      <%= @room.currency.name %><%= message.content.to_s(:delimited) %><br>
+      <b><%= "支払額 #{@room.currency.name}" %><%= message.content.floor(2).to_s(:delimited) %></b><br>
+      <b><%= "#{@room.number}人で割った1人分の金額は #{@room.currency.name}#{(message.content / @room.number).floor(2).to_s(:delimited)}" %></b>
       <div class="lower-sub-message">
-        <%= "換算額は¥#{(message.content / @room.price * 100).floor.to_s(:delimited)}" %><br>
-        <%= "#{@room.number}人で割った1人分の金額は#{@room.currency.name}#{(message.content / @room.number).to_s(:delimited)}" %><br>
-        <%= "#{@room.number}人で割った1人分の換算額は¥#{(message.content / @room.price * 100 / @room.number).floor.to_s(:delimited)}" %>
-      <% end %>
+        <%= "支払いの換算額 ¥#{(message.content / @room.price * 100).floor(0).to_s(:delimited)}" %><br>
+        <%= "#{@room.number}人で割った1人分の換算額は ¥#{(message.content / @room.price * 100 / @room.number).floor().to_s(:delimited)}" %>
       </div>
+      <% end %>
     </div>
-    <%= image_tag message.image.variant(resize: '300x300'), class: 'message-image' if message.image.attached? %>
+    <%= image_tag message.image.variant(resize: '300x800'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>
+

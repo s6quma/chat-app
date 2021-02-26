@@ -13,7 +13,6 @@ class Room < ApplicationRecord
   validates :currency_id, numericality: { other_than: 0 }
 
   def number
-    @number = self.users.length
+    @number = users.length
   end
-
 end

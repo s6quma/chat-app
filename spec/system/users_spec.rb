@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "ユーザーログイン機能", type: :system do
+RSpec.describe 'ユーザーログイン機能', type: :system do
   it 'ログインしていない状態でトップページにアクセスした場合、サインインページに移動する' do
     # トップページに遷移する
     visit root_path
@@ -30,12 +30,12 @@ RSpec.describe "ユーザーログイン機能", type: :system do
     # トップページに遷移する
     visit root_path
     # ログインしていない場合、サインインページに遷移していることを確認する
-    fill_in 'Email', with: ""
-    fill_in 'Password', with: ""
+    fill_in 'Email', with: ''
+    fill_in 'Password', with: ''
     expect(current_path).to eq new_user_session_path
     # 誤ったユーザー情報を入力する
-    fill_in 'Email', with: "aaa@t"
-    fill_in 'Password', with: "0000000"
+    fill_in 'Email', with: 'aaa@t'
+    fill_in 'Password', with: '0000000'
     # ログインボタンをクリックする
     click_on('Log in')
     # サインインページに戻ってきていることを確認する

@@ -1,3 +1,2 @@
 namespace :reminder do
-  
 end

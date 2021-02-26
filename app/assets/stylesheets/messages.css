@@ -1,55 +1,66 @@
 .wrapper {
   display: flex;
+  background-color: #fefaed;
 }
 
 .side-bar {
-  width: 300px;
+  width: 200px;
   height: 100vh;
-  background-color: #253141;
+  background-color:  #fcd200;
 }
 
 .side-header {
   height: 100px;
-  padding: 0 20px;
   display: flex;
+  padding: 0 20px;
   justify-content: space-between;
   align-items: center;
 }
 
 .user-name a {
-  color: #fafafa;
-  font-size: 16px;
+  color: rgb(72, 69, 28);
+  font-size: 23px;
+
   text-decoration: none;
 }
 
 .chat-create-btn a {
-  color: deepskyblue;
-  font-size: 10px;
-  padding: 14px;
-  border: 1px solid lightblue;
+  font-size: 21px;
+  color: rgb(72, 69, 28);
+  padding: 12px;
+  background-color: #fcb000d4;
   text-decoration: none;
+  border-radius: 3px;
 }
 
+.chat-create-btn a:hover {
+  background-color: #fcb000;
+}
 
 .rooms {
   height: calc(100vh - 100px);
-  background-color: #2f3e51;
-  padding: 0 20px;
+  background-color: #fcd200fe;
   overflow: scroll;
 }
 
 .room {
-  padding: 20px 0 40px;
+  padding: 20px 0 25px;
+  background-color: #fcd200fe;
+}
+
+.room:hover {
+  background-color: #fcc500;
 }
 
 .group-name a {
-  color: white;
+  color: rgb(27, 27, 27);
   text-decoration: none;
+  padding: 0px 20px;
 }
 
 .chat {
-  width: calc(100vw - 300px);
-  background-color: #ffffff;
+  width: calc(100vw - 200px);
+  background-color: #fefaed;
 }
 
 .chat-header {
@@ -66,10 +77,15 @@
 }
 
 .chat-close-btn a {
-  padding: 20px;
-  border: 1px solid darkred;
-  color: darkred;
-  text-decoration: none;
+  padding: 12px;
+  color: #fff;
+  background-color: #fcd200cd;
+  font-size: 24px;
+  border-radius: 3px;
+}
+
+.chat-close-btn a:hover {
+  background-color: #fcd200;
 }
 
 .chat-close-btn {
@@ -78,42 +94,87 @@
 
 .messages {
   height: calc(100vh - 100px - 90px);
-  background-color: #fafafa;
-  padding: 46px 50px 0;
+  background-color: #fefaed;
+  /* padding: 40px 50px 0; */
   overflow: scroll;
+}
+
+.message {
+  position: relative;
+  background-color: #fefaed;
+}
+
+.message:hover{
+  background-color: #fcf7e4;
 }
 
 .upper-message {
   display: flex;
-  padding: 10px 0;
+  padding: 40px 50px 0;
 }
 
 .message-user {
   font-size: 20px;
-  color: gray;
-  padding-right: 40px;
+  color:rgb(123, 115, 62);
+  padding-right: 30px;
 }
 
 .message-date {
-  font-size: 16px;
-  color: #999;
+  font-size: 13px;
+  color: rgba(123, 115, 62, 0.675);
 }
 
 .lower-message {
-  font-size: 24px;
-  color: #434a54;
+  font-size: 28px;
+  color: #434335;
   margin: 10px 30px 40px;
+  padding: 10px 50px 3px;
 }
 
 .lower-sub-message {
-  font-size: 16px;
-  color: #7d7e81;
-  margin: 5px 0 40px;
+  font-size: 21px;
+  color: #2496d9;
+  margin: 18px 0 40px;
 }
+
+/* チェックボックス */
+
+
+/* right-content */
+.right_content {
+  position: absolute;
+  right: 10px;
+}
+/* ドロップダウンタグ */
+.menu li {
+  position: relative;
+  float: left;
+}
+.menu li a {
+  display: block;
+  width: 80px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(72, 69, 28, 0.744);
+  text-align: center;
+}
+.menu li a:hover {
+  background: #fcd200cd;
+}
+.menu li:hover > ul {
+  display: block;
+}
+.menu ul {
+  display: none;
+  position: absolute;
+  top: 38px;
+  width: 80px;
+}
+/* ドロップダウンタグ */
 
 .form {
   height: 90px;
-  background-color: #dddddd;
+  background-color: #d9bc2e;
   padding: 20px 40px;
   display: flex;
 }
@@ -121,7 +182,8 @@
 .form-input {
   width: 100%;
   display: flex;
-  background-color: white;
+  background-color: #fefaed;
+  border-radius: 3px;
 }
 
 .form-message {
@@ -129,26 +191,35 @@
   height: 50px;
   width: 100%;
   border: none;
+  background-color: #fefaed;
+  border-radius: 3px;
 }
 
-.form-submit {
+#form-submit {
   color: white;
-  background-color: #38aef0;
+  background-color: #32aaef;
   height: 50px;
-  padding: 0 20px;
+  padding: 0 14px;
   margin-left: 15px;
   border: none;
-  font-size: 16px;
+  border-radius: 3px;
+}
+
+#form-submit:hover {
+  background-color: #1ca0ec;
 }
 
 .form-image {
-  font-size: 12px;
   background-color: lightblue;
   color: white;
-  padding: 12px;
+  padding-top: 4px;
   width: 60px;
   margin: 5px 10px;
   text-align: center;
+}
+
+.form-image:hover {
+  background-color: rgb(146, 207, 227);
 }
 
 .hidden {

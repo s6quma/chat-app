@@ -1,14 +1,16 @@
 h1 {
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   text-align: center;
+  color: rgb(69, 66, 27);
 }
 
 h2 {
   margin-bottom: 10px;
-  color: #f05050;
+  color: rgb(69, 66, 27);
   font-size: 14px;
+  font-family: "Arial", "メイリオ";
 }
 
 ul {
@@ -27,9 +29,9 @@ li {
   width: 980px;
   margin: 60px auto;
   padding: 40px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background-color: #fcd200;
+  border: 1px solid #fff;
+  border-radius: 3px;
   box-sizing: border-box;
 }
 .chat-room-form__errors {
@@ -44,13 +46,20 @@ li {
   line-height: 50px;
   font-weight: bold;
   text-align: right;
+  font-size: 16px;
+  color: rgb(69, 66, 27);
 }
 .chat-room-form__input {
   float: left;
-  width: 100%;
+  width: 60%;
   line-height: 30px;
-  padding: 10px 15px;
+  padding: 5px 15px;
   box-sizing: border-box;
+  border: none;
+  font-size: 13px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  background-color: #fefaed;
 }
 .chat-room-form__action-btn {
   display: inline-block;
@@ -58,6 +67,10 @@ li {
   color: #fff;
   background-color: #38aef0;
   border: 0;
+  border-radius: 3px;
+}
+.chat-room-form__action-btn:hover {
+  background-color: #1ca0ec;
 }
 .chat-room-form__field {
   margin-top: 30px;
@@ -113,8 +126,15 @@ li {
 }
 
 select {
-  width: 500px;
-  height: 50px;
+  width: 378px;
+  height: 38px;
+  margin: 8px 0;
+  padding: 0 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fefaed;
+  color: rgba(69, 66, 27, 0.915);
+  font-size: 13px;
 }
 
 .top-header {

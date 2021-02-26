@@ -2,10 +2,16 @@
   width: 980px;
   margin: 60px auto;
   padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background-color: #fcd200;
+  border-radius: 3px;
 }
+
+.account-page__inner--left a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   float: left;
   width: 50%;
@@ -16,9 +22,7 @@
   display: block;
 }
 .account-page .account-page__header h2 {
-  margin-bottom: 10px;
-  letter-spacing: 3px;
-  font-size: 40px;
+  font-size: 29px;
   font-weight: 200;
 }
 .account-page .account-page__header h2:after {
@@ -26,7 +30,7 @@
   display: block;
   width: 60px;
   margin-top: 5px;
-  border-bottom: 1px solid #38aef0;
+
 }
 .account-page .account-page__header h5 {
   margin-bottom: 20px;
@@ -36,17 +40,22 @@
 .account-page .account-page__header .btn {
   margin-top: 20px;
   color: #fff;
-  background-color: #ccc;
+  background-color:#38aef0;
   font-size: 14px;
+  text-decoration: none;
+}
+.account-page .account-page__header .btn:hover {
+  background-color: #1ca0ec;
 }
 .account-page .field {
   margin-bottom: 10px;
 }
 .account-page .field .field-label {
-  padding: 10px 0;
+  padding: 8px 0;
   letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 200;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(69, 66, 27);
 }
 .account-page .field .field-label i {
   font-size: 11px;
@@ -54,14 +63,15 @@
 .account-page .field .field-input input {
   width: 100%;
   padding: 10px;
-  letter-spacing: 1px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fefaed;
 }
 .account-page .btn {
   display: inline-block;
-  height: 50px;
+  height: 44px;
   padding: 0 30px;
-  line-height: 50px;
-  letter-spacing: 1px;
+  line-height: 47px;
   text-align: center;
   border: none;
   border-radius: 2px;
@@ -71,6 +81,9 @@
   margin-top: 20px;
   color: #fff;
   background-color: #38aef0;
+}
+.account-page input[type=submit]:hover {
+  background-color:#1ca0ec;
 }
 .account-page .field-label .field_with_errors {
   display: inline-block;

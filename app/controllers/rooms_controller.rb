@@ -1,5 +1,4 @@
 class RoomsController < ApplicationController
-
   def index
   end
 
@@ -9,11 +8,11 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-      if @room.save
-        redirect_to root_path
-      else
-        render :new
-      end
+    if @room.save
+      redirect_to room_messages_path(@room)
+    else
+      render :new
+    end
   end
 
   def destroy
@@ -23,6 +22,7 @@ class RoomsController < ApplicationController
   end
 
   private
+
   def room_params
     params.require(:room).permit(:name, :price, :currency_id, user_ids: [])
   end
