@@ -5,11 +5,11 @@ RSpec.describe 'Rooms', type: :system do
     @room_user = FactoryBot.create(:room_user)
   end
 
-  it 'チャットルームを削除すると、関連するメッセージがすべて削除されていること' do
+  it 'グループを削除すると、関連するメッセージがすべて削除されていること' do
     # サインインする
     sign_in(@room_user.user)
 
-    # 作成されたチャットルームへ遷移する
+    # 作成されたRooms グループへ遷移する
     click_on(@room_user.room.name)
 
     # メッセージ情報を5つDBに追加する

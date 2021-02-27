@@ -19,7 +19,7 @@ RSpec.describe 'ユーザーログイン機能', type: :system do
     fill_in 'user_email', with: @user.email
     fill_in 'user_password', with: @user.password
     # ログインボタンをクリックする
-    click_on('Log in')
+    click_on('ログイン')
     # トップページに遷移していることを確認する
     expect(current_path).to eq root_path
   end
