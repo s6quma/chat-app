@@ -25,6 +25,10 @@ li {
   font-size: 13px;
 }
 
+.wrapper {
+  background-image: url(exchange.png);
+}
+
 .chat-room-form {
   width: 980px;
   margin: 60px auto;
