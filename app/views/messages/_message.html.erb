@@ -1,12 +1,14 @@
 <div class="message">
   <div class="right_content">
    <ul class="menu">
-   <li><a href=""><i class="fas fa-angle-down fa-2x"></i></a>
-      <ul>
-         <li><%= link_to '削除', room_message_path(@room, message) , method: :delete, class: "right_list" %></li>
-         <li> <%= link_to '編集', "#" ,class: "right_list" %></li>
-      </ul>
-    </li>
+    <% if message.user_id == current_user.id  %>
+      <li><a href=""><i class="fas fa-angle-down fa-2x"></i></a>
+          <ul>
+            <li><%= link_to '削除', room_message_path(@room, message) , method: :delete, class: "right_list" %></li>
+            <li> <%= link_to '編集', "#" ,class: "right_list" %></li>
+          </ul>
+        </li>
+      <% end %>
     </ul>
   </div>
   <div class="upper-message">

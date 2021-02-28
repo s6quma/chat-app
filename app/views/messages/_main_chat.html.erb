@@ -2,11 +2,13 @@
   <div class="chat-title">
     <%= @room.name%>
   </div>
-  <div class="chat-close-btn">
-    <%= link_to room_path(@room), :method => :delete do %>
-      <i class="fas fa-door-open fa-1x"></i>
+    <% if current_user.id == @room.user_ids[1] || @room.user_ids.length == 1  %>
+      <div class="chat-close-btn">
+        <%= link_to room_path(@room), :method => :delete do %>
+          <i class="fas fa-door-open fa-1x"></i>
+        <% end %>
+      </div>
     <% end %>
-  </div>
 </div>
 
 <div class="messages" id= "messages">
