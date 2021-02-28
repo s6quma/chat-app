@@ -19,9 +19,13 @@
 
 .user-name a {
   color: rgb(72, 69, 28);
-  font-size: 23px;
-
+  font-size: 22px;
+  font-weight: 600;
   text-decoration: none;
+}
+
+.user-name a:hover {
+  color: rgba(69, 66, 27, 0.709);
 }
 
 .chat-create-btn a {
@@ -127,14 +131,14 @@
 .lower-message {
   font-size: 28px;
   color: #434335;
-  margin: 10px 30px 40px;
-  padding: 10px 50px 3px;
+  margin: 0px 30px;
+  padding: 15px 50px 33px;
 }
 
 .lower-sub-message {
   font-size: 21px;
   color: #2496d9;
-  margin: 18px 0 40px;
+  margin-top: 18px;
 }
 
 /* チェックボックス */

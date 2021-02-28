@@ -1,6 +1,6 @@
 <div class="chat-header">
   <div class="chat-title">
-    <%= @room.name%>
+    <%= link_to  @room.name, edit_room_path(@room.id), class: 'chat-title-name' %>
   </div>
     <% if current_user.id == @room.user_ids[1] || @room.user_ids.length == 1  %>
       <div class="chat-close-btn">
