@@ -3,6 +3,7 @@
     <%= link_to  @room.name, edit_room_path(@room.id), class: 'chat-title-name' %>
   </div>
     <% if current_user.id == @room.user_ids[1] || @room.user_ids.length == 1  %>
+    <%# <% if current_user.id == @room.user_ids[1] || @room.user_ids.length == 1  %> 
       <div class="chat-close-btn">
         <%= link_to room_path(@room), :method => :delete do %>
           <i class="fas fa-door-open fa-1x"></i>
