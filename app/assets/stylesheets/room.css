@@ -26,7 +26,8 @@ li {
 }
 
 .wrapper {
-  background-image: url(exchange.png);
+  background-image: image-url("exchange.png");
+  background-repeat: no-repeat;
 }
 
 .chat-room-form {
