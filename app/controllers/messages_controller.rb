@@ -28,14 +28,6 @@ class MessagesController < ApplicationController
     end
   end
 
-  # def split
-  #   number = @room.user.length
-  #   @messages = @room.messages.includes(:user)
-  #   @message.content / number
-  #   @split = Message.split
-  # end
-    
-
   private
   def message_params
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id, room_id: params[:room_id])
