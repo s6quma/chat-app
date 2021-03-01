@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 2021_01_18_075056) do
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
+    t.integer "manager", null: false
     t.float "price", null: false
     t.integer "currency_id", null: false
     t.datetime "created_at", precision: 6, null: false

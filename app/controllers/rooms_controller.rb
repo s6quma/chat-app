@@ -7,6 +7,7 @@ class RoomsController < ApplicationController
   end
 
   def create
+
     @room = Room.new(room_params)
     if @room.save
       redirect_to room_messages_path(@room)
@@ -37,6 +38,6 @@ class RoomsController < ApplicationController
   private
 
   def room_params
-    params.require(:room).permit(:name, :price, :currency_id, user_ids: [])
+    params.require(:room).permit(:name, :price, :currency_id, user_ids: []).merge(manager: current_user.id)
   end
 end

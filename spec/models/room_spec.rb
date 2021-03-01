@@ -7,7 +7,7 @@ RSpec.describe Room, type: :model do
     end
 
     describe 'グループが作成できる時' do
-      it 'nameの値が存在すれば登録できること' do
+      it '全ての値が存在すれば登録できること' do
         expect(@room).to be_valid
       end
     end

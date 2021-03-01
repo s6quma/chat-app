@@ -19,6 +19,7 @@
 | Column      | Type    | Options     |
 | ----------- | ------- | ----------- |
 | name        | string  | null: false |
+| manager     | integer | null: false |
 | price       | float   | null: false |
 | currency_id | integer | null: false |
 

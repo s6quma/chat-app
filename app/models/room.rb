@@ -8,6 +8,7 @@ class Room < ApplicationRecord
 
   with_options presence: true do
     validates :name
+    validates :manager
     validates :price, numericality: true, numericality: { message: 'は半角数字(カンマなし)で入力をしてください' }
   end
   validates :currency_id, numericality: { other_than: 0 , message: 'を選択してください'}
