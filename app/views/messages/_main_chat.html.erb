@@ -4,7 +4,7 @@
   </div>
     <% if @room.manager == current_user.id %>
       <div class="chat-close-btn">
-        <%= link_to room_path(@room), :method => :delete do %>
+        <%= link_to room_path(@room), class:'ルーム削除', :method => :delete do %>
           <i class="fas fa-door-open fa-1x"></i>
         <% end %>
       </div>

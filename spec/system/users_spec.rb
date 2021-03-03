@@ -30,14 +30,14 @@ RSpec.describe 'ユーザーログイン機能', type: :system do
     # トップページに遷移する
     visit root_path
     # ログインしていない場合、サインインページに遷移していることを確認する
-    fill_in 'Email', with: ''
-    fill_in 'Password', with: ''
+    fill_in 'user_email', with: ''
+    fill_in 'user_password', with: ''
     expect(current_path).to eq new_user_session_path
     # 誤ったユーザー情報を入力する
-    fill_in 'Email', with: 'aaa@t'
-    fill_in 'Password', with: '0000000'
+    fill_in 'user_email', with: 'aaa@t'
+    fill_in 'user_password', with: '0000000'
     # ログインボタンをクリックする
-    click_on('Log in')
+    click_on('ログイン')
     # サインインページに戻ってきていることを確認する
     expect(current_path).to eq new_user_session_path
   end

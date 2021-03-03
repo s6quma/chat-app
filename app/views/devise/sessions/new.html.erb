@@ -2,7 +2,6 @@
   <div class='account-page__inner clearfix'>
     <div class='account-page__inner--left account-page__header'>
       <h2>既存のユーザーでログイン</h2>
-      <%= render "devise/shared/links"%>
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: resource, as: resource_name, url: session_path(resource_name), local: true do |f|%>
@@ -24,6 +23,7 @@
           </div>
           <div class='actions'>
             <%= f.submit "ログイン", class: 'btn'%>
+            <%= link_to "サインイン",new_user_registration_path ,class: 'btn'%>
           </div>
         </div>
       <% end %>

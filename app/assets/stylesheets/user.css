@@ -6,12 +6,6 @@
   border-radius: 3px;
 }
 
-.account-page__inner--left a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-}
-
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   float: left;
   width: 50%;
@@ -75,6 +69,17 @@
   text-align: center;
   border: none;
   border-radius: 2px;
+}
+.account-page a {
+  text-decoration: none;
+  float: left;
+  margin-top: 20px;
+  color: #fff;
+  margin-left: 20px;
+  background-color: #38aef0;
+}
+.account-page a:hover {
+  background-color:#1ca0ec;
 }
 .account-page input[type=submit] {
   float: left;

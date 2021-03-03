@@ -6,11 +6,11 @@ RSpec.describe 'Messages', type: :system do
   end
 
   context '投稿に失敗したとき' do
-    it '送る値が空の為、メッセージの送信に失敗すること' do
+    it '送る値が空の為、投稿の送信に失敗すること' do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたグループルームへ遷移する
       click_on(@room_user.room.name)
 
       # DBに保存されていないことを確認する
