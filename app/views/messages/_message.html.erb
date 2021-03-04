@@ -34,7 +34,7 @@
          <% if @room.currency_id != 10 %>
           <%= "支払いの換算額 ¥#{(message.content / @room.price * 100).floor(0).to_s(:delimited)}" %><br>
         <% end %>
-        <% if @room.user_ids.length != 1 %>
+        <% if @room.user_ids.length != 1 && @room.currency_id != 10 %>
           <%= "#{@room.number}人で割った1人分の換算額は ¥#{(message.content / @room.price * 100 / @room.number).floor().to_s(:delimited)}" %>
         <% end %>
       </div>
