@@ -4,7 +4,7 @@
   </div>
     <% if @room.manager == current_user.id %>
       <div class="chat-close-btn">
-        <%= link_to room_path(@room), class:'ルーム削除', :method => :delete do %>
+        <%= link_to room_path(@room), id: 'delete-room-btn', :method => :delete do %>
           <i class="fas fa-door-open fa-1x"></i>
         <% end %>
       </div>
@@ -25,7 +25,7 @@
       </label>
     </div>
       <%= f.button :type => "submit", style: 'border-style: none;', id: 'form-submit' do %>
-      <%# <%= f.submit '送信', class: 'form-submit', id: 'form-submit' %>
+       <%# <%= f.submit '送信', class: 'form-submit', id: 'form-submit' %>
       <i class="far fa-paper-plane fa-2x"></i>
       <% end %>
 <% end %>

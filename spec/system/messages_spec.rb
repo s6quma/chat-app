@@ -15,7 +15,7 @@ RSpec.describe 'Messages', type: :system do
 
       # DBに保存されていないことを確認する
       expect do
-        find('input[name= "commit"]').click
+        click_button('form-submit').click
       end.not_to change { Message.count }
       # 元のページに戻ってくることを確認する
       expect(current_path).to eq room_messages_path(@room_user.room)
@@ -31,11 +31,11 @@ RSpec.describe 'Messages', type: :system do
       click_on(@room_user.room.name)
 
       # 値をテキストフォームに入力する
-      post = 'e'
-      fill_in 'message_content', with: post
+      post = '400'
+      fill_in 'message[content]', with: post
       # 送信した値がDBに保存されていることを確認する
       expect  do
-        find('input[name="commit"]').click
+        click_button('form-submit').click
       end.to change { Message.count }.by(1)
       # 投稿一覧画面に遷移していることを確認する
       expect(current_path).to eq room_messages_path(@room_user.room)
@@ -58,7 +58,7 @@ RSpec.describe 'Messages', type: :system do
       attach_file('message[image]', image_path, make_visible: true)
       # 送信した値がDBに保存されていることを確認する
       expect do
-        find('input[name="commit"]').click
+        click_button('form-submit').click
       end.to change { Message.count }.by(1)
       # 投稿一覧画面に遷移していることを確認する
       expect(current_path).to eq room_messages_path(@room_user.room)
@@ -80,12 +80,12 @@ RSpec.describe 'Messages', type: :system do
       attach_file('message[image]', image_path, make_visible: true)
 
       # 値をテキストフォームに入力する
-      post = 'ee'
-      fill_in 'message_content', with: post
+      post = '600'
+      fill_in 'message[content]', with: post
 
       # 送信した値がDBに保存されていることを確認する
       expect do
-        find('input[name="commit"]').click
+        click_button('form-submit').click
       end.to change { Message.count }.by(1)
 
       # 送信した値がブラウザに表示されていることを確認する

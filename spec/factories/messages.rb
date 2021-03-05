@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :message do
-    content { 0.94 }
+    content { Faker::Number.within(range: 1..10000) }
     association :user
     association :room
 
