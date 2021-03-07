@@ -115,10 +115,48 @@
     margin-left: 30px 60px;
   }
 
-  .e-btn {
+  .btn {
     
   }
 
   /* user */
+
+  /* room */
+  .side-bar {
+    display: none;
+  }
+
+  .messages {
+    width: 414px;
+  }
+  
+  .chat-header {
+    width: 414px;
+    padding: 0 20px;
+  }
+
+  .form {
+    width: 414px;
+    padding: 20px ;
+  }
+
+  .right_content {
+    right: 20px;
+  }
+
+  .upper-message {
+    padding: 30px 30px 0;
+  }
+
+  .lower-message {
+    padding: 15px 0px;
+    font-size: 26px;
+  }
+  
+  .lower-sub-message {
+    font-size: 18px;
+  }
+  /* room */
+
 }
 
