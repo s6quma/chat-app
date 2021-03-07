@@ -38,11 +38,18 @@
 
  @media (max-width: 500px) {
 
+  .submit{
+    appearance: none;
+    border: none;
+    border-raduis: none;
+  
+  }
+
   /* rooms */
   .chat-room-form {
     width: 100%;
     height: 100%;
-    padding: 60px 45px;
+    padding: 30px 45px;
     border: none;
     margin: auto;
   }
@@ -83,8 +90,14 @@
   }
 
   .account-page .account-page__header h2 {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 600;
     text-align: center;
+  }
+
+  .account-page__inner--left .account-page__header h2 {
+    font-size: 22px;
+    font-weight: 600;
   }
 
   .field-label {
@@ -95,7 +108,7 @@
   .account-page .account-page__inner {
     width: 100%;
     height: 100%;
-    padding: 50px 45px;
+    padding: 0px 45px;
 
   }
 
