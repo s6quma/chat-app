@@ -121,6 +121,10 @@
     font-size: 16px;
   }
 
+  .account-page a {
+    margin-left: 0px;
+  }
+
   /* user */
 
   /* room */
