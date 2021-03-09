@@ -195,11 +195,27 @@
   /* room */
 
   .side-header {
-    background-color: #b5a760;
+    height: 80px;
   }
 
   .group-name {
-    font-size: 26px;
+    font-size: 24px;
+    font-weight: 600;
+    color:  rgb(72, 69, 28);
+  }
+
+  .rooms {
+    height: calc(100vh - 80px);
+    background-color:#f6e7b4;
+  }
+
+  .room {
+    padding: 20px 0 15px;
+    background-color: #f6e7b4;
+  }
+
+  .room:hover {
+    background-color: #f4e1a2;
   }
 }
 
