@@ -210,16 +210,17 @@
 
   .rooms {
     height: calc(100vh - 80px);
-    background-color:#f6e7b4;
+    background-color:#f8ebc1;
+    padding: 10px 0;
   }
 
   .room {
-    padding: 25px 0 5px;
-    background-color: #f6e7b4;
+    padding: 15px 0;
+    background-color: #f8ebc1;
   }
 
   .room:hover {
-    background-color: #f4e1a2;
+    background-color: #f5e5b1;
   }
 }
 
