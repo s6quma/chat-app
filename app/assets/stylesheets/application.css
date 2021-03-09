@@ -135,6 +135,7 @@
   }
   /* room#index */
 
+  /* chat-room レスポンシブ */
   #chat-full {
     width: 100%;
   }
@@ -142,22 +143,40 @@
   #side-bar-none {
     display: none;
   }
+  /* chat-room レスポンシブ */
 
-  .chat {
-    width: 100%;
-    height: 100%;
-  }
 
   .chat-header {
     padding: 0 20px;
+    height: 80px;
+  }
+
+  .chat-title {
+    padding-top: 30px;
+  }
+
+  .chat-close-btn a {
+    padding: 12px;
+    font-size: 22px;
+  }
+
+  .chat-close-btn {
+    margin-top: 30px;
   }
 
   .form {
-    padding: 20px ;
+    padding: 20px;
   }
 
   .right_content {
     right: 20px;
+  }
+
+  .messages {
+    height: calc(100vh - 90px - 80px);
+    background-color: #fefaed;
+    /* padding: 40px 50px 0; */
+    overflow: scroll;
   }
 
   .upper-message {
@@ -165,14 +184,22 @@
   }
 
   .lower-message {
-    padding: 15px 0px;
-    font-size: 26px;
+    padding: 5px 0px;
+    font-size: 22px;
   }
   
   .lower-sub-message {
     font-size: 18px;
+    margin-top: 5px;
   }
   /* room */
 
+  .side-header {
+    background-color: #b5a760;
+  }
+
+  .group-name {
+    font-size: 26px;
+  }
 }
 
