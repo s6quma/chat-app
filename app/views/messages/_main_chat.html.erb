@@ -1,5 +1,6 @@
 <div class="chat-header">
   <div class="chat-title">
+    <a href="/"><i class="fas fa-angle-left" id="to-group"></i></a>
     <%= link_to  @room.name, edit_room_path(@room.id), class: 'chat-title-name' %>
   </div>
     <% if @room.manager == current_user.id %>

@@ -128,8 +128,19 @@
   /* user */
 
   /* room */
-  .side-bar {
-    width: 200px;
+
+  /* room#index */
+  #side-full {
+    width: 100%;
+  }
+  /* room#index */
+
+  #chat-full {
+    width: 100%;
+  }
+
+  #side-bar-none {
+    display: none;
   }
 
   .chat {

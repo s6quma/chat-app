@@ -56,6 +56,15 @@
   background-color: #fcc500;
 }
 
+#to-group {
+  color: rgb(72, 69, 28);
+  margin-right: 5px;
+}
+
+#to-group:hover{
+  color: rgba(69, 66, 27, 0.709);
+}
+
 .group-name a {
   color: rgb(27, 27, 27);
   text-decoration: none;
