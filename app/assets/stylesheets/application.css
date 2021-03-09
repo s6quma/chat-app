@@ -198,10 +198,14 @@
     height: 80px;
   }
 
-  .group-name {
+  .group-name a {
     font-size: 24px;
     font-weight: 600;
-    color:  rgb(72, 69, 28);
+    color:  rgb(69, 66, 27);
+  }
+
+  .group-name a:hover {
+    color: rgba(69, 66, 27, 0.812);
   }
 
   .rooms {
@@ -210,7 +214,7 @@
   }
 
   .room {
-    padding: 20px 0 15px;
+    padding: 25px 0 5px;
     background-color: #f6e7b4;
   }
 
