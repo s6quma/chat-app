@@ -51,7 +51,7 @@ https://gyazo.com/d96a584a62c1bd44f8302eb2778cd295
 また、国内旅行や友人とのパーティーの打ち分け、1人旅、個人的な買い物のメモとしてもYou owe meを活用できるよう、シチュエーションに合わせた条件分岐の記述を行い、計算表示部分の必要な情報のみを表示できるようにしました。
 ![onesignal.jpg](https://user-images.githubusercontent.com/77200417/110952457-99431280-8389-11eb-834c-ea216ee265c0.jpg)
 
-
+![](hawaii-myself.jpg)
 
 ## 🌐 App URL
 ### https://you-owe-me.herokuapp.com <br>
