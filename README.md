@@ -1,6 +1,6 @@
 ## App名  You owe me
 
-# 概要
+# :airplane: 概要
 旅行中にシェアしたお金やレシートをチャット形式で管理ができるアプリです。また、グループ上で金額を投稿すると、一人分の金額と円換算金額の結果が表示され、計算の手間を省くことができます。
 **貴重な旅行の時間を最大限に楽しむため**に、お金のシェア時に生じる必要な工程を最短で行えるよう1つのアプリにまとめ、容易に漏れなく管理ができます。
 
@@ -62,8 +62,8 @@ https://gyazo.com/d96a584a62c1bd44f8302eb2778cd295
 - パスワード nanana7
 
 
-## 使用技術(開発環境)
-Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello
+## :open_file_folder: 使用技術(開発環境)
+HTML / CSS / Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / OneSignal API
 <br>
 
 ## 課題や今後実装したい機能
