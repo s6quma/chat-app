@@ -52,7 +52,7 @@ https://gyazo.com/d96a584a62c1bd44f8302eb2778cd295
 ![](onesignal.jpg)<br>  
 また、国内旅行や友人とのパーティーの打ち分け、1人旅、個人的な買い物のメモとしてもYou owe meを活用できるよう、シチュエーションに合わせた条件分岐の記述を行い、計算表示部分の必要な情報のみを表示できるようにしました。
 <br>
-![](hawaii-myself.jpg)
+![](hawaii-myself.png)
 ![](hokkaido.jpg)
 
 ## 🌐 App URL
