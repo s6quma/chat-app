@@ -47,12 +47,13 @@ https://gyazo.com/d96a584a62c1bd44f8302eb2778cd295
 
 
 ## :point_up: 工夫したポイント
-お金を返し忘れている時にアプリから通知が届くようにOneSignal APIの導入をしました。
-また、国内旅行や友人とのパーティーの打ち分け、1人旅、個人的な買い物のメモとしてもYou owe meを活用できるよう、シチュエーションに合わせた条件分岐の記述を行い、計算表示部分の必要な情報のみを表示できるようにしました。
+お金を返し忘れている際はアプリから通知が届くようにOneSignal APIの導入をしました。
+<br>
 ![](onesignal.jpg)
-
-![](hawaii-myself.jpg)<br>
-![](hokkaido.jpg)
+また、国内旅行や友人とのパーティーの打ち分け、1人旅、個人的な買い物のメモとしてもYou owe meを活用できるよう、シチュエーションに合わせた条件分岐の記述を行い、計算表示部分の必要な情報のみを表示できるようにしました。
+<br>
+![](hokkaido.jpg)<br>
+![](hawaii-myself.jpg)
 
 ## 🌐 App URL
 ### https://you-owe-me.herokuapp.com <br>
