@@ -33,7 +33,7 @@
 ![](you-owe-me1.png)<br>
 
 - グループを作成したユーザーのみがグループを削除でき、投稿者のみが投稿を削除できます<br><br>
-![](delete.png)<br>
+![](send-delete.png)<br>
 
 - レシートも投稿ができます<br><br>
 ![](send-reciept.png)<br>
