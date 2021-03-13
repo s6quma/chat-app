@@ -28,17 +28,12 @@
 ## アプリの仕様
 - シェアしたい相手とのグループルームを作成<br><br>
 ![](create-group.png)<br>  
-https://gyazo.com/c92f89fad2690592b6276cd3543b1906
 
 - 海外の旅行中の4人のユーザーのグループルーム（金額を打ち込み投稿をすると、人数で割った金額、円換算された金額が表示されます）
-![](you-owe-me1.png)<br>
-https://gyazo.com/662db5d704ff9af8ce47220e8c0b5037
+![](you-owe-me.png)<br>
 
 - グループを作成したユーザーのみがグループを削除でき、投稿者のみが投稿を削除できます
-https://gyazo.com/a05b6775b6cbc66a6fa8650ab62847e0
-
 - レシートも投稿ができます
-https://gyazo.com/0b70c0d506ad0ee2c0be849167f94195
 
 ## :point_up: 工夫したポイント
 お金を返し忘れている際はアプリから通知が届くようにOneSignal APIの導入をしました。
