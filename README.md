@@ -26,7 +26,8 @@
 <br>
 
 ## アプリの仕様
-- シェアしたい相手とのグループルームを作成
+- シェアしたい相手とのグループルームを作成<br>
+![](create-group.png)<br>  
 https://gyazo.com/c92f89fad2690592b6276cd3543b1906
 
 - 海外の旅行中の3人のユーザーのグループルーム（金額を打ち込み投稿をすると、人数で割った金額、円換算された金額が表示されます）
@@ -49,11 +50,11 @@ https://gyazo.com/d96a584a62c1bd44f8302eb2778cd295
 ## :point_up: 工夫したポイント
 お金を返し忘れている際はアプリから通知が届くようにOneSignal APIの導入をしました。
 <br><br>
-![](onesignal.jpg)<br>  
+![](onesignal.png)<br>  
 また、国内旅行や友人とのパーティーの打ち分け、1人旅、個人的な買い物のメモとしてもYou owe meを活用できるよう、シチュエーションに合わせた条件分岐の記述を行い、計算表示部分の必要な情報のみを表示できるようにしました。  
 <br>
-![](hawaii-myself.jpg)
-![](hokkaido.jpg)
+![](hawaii-myself.png)
+![](hokkaido-3.png)
 
 ## 🌐 App URL
 ### https://you-owe-me.herokuapp.com <br>
