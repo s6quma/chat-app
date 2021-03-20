@@ -17,17 +17,6 @@ class MessagesController < ApplicationController
       @messages = @room.messages.includes(:user)
       render :index
     end
-
-    # @message = @room.messages.new(message_params)
-    # if @message.save
-    #   redirect_to room_messages_path(@room)
-    # else
-    #   @messages = @room.messages.includes(:user)
-    #   render :index
-    # end
-
-    # @message = room.messages.create(message_params)
-    # render json:{ message: message }
   end
 
   def destroy
