@@ -16,7 +16,7 @@
   <%= render partial: 'message', collection: @messages %>
 </div>
 
-<%= form_with model: [@room, @message], class: 'form', id:'form' do |f| %>
+<%= form_with model: [@room, @message], class: 'form', id:'form', local:true do |f| %>
     <div class="form-input">
      <%= f.text_field :content , class: 'form-message', placeholder: '金額を入力して下さい', id: 'content' %>
      <%# <%= f.number_field :calculation , class: 'form-calculate', placeholder: '数値' %>
