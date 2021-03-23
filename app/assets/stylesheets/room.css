@@ -27,12 +27,12 @@ li {
 
 .chat-screen {
   width: calc(100vw - 200px);
-  height: 100vh;
   text-align: center;
+  margin-top: 150px;
 }
 
 .chat-screen p {
-  margin-bottom: 5px;
+  margin: 15px 0 5px;
   color: rgba(69, 66, 27, 0.805);
 }
 
