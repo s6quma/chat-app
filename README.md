@@ -25,6 +25,14 @@
 - **時間をかけずシェアしたお金のメモができることで旅行を存分に楽しめること**
 <br>
 
+# ユーザーがアプリの使いやすさを考えた点
+- 非同期投稿ができる
+- グループの削除ができるのはグループを作成したユーザーのみの設定
+- 投稿を削除できるのは投稿したユーザーのみの設定
+- レスポンシブ対応
+- 通知機能の導入
+
+
 # アプリの仕様
 ### シェアしたい相手とのグループルームを作成<br>
 グループ上で扱うグループ名、シェアをしたユーザー、レートと通貨の設定を行う<br><br>
@@ -65,11 +73,10 @@ OneSignal APIの導入をし、お金を返し忘れている際はアプリか�
 
 
 # :open_file_folder: 使用技術(開発環境)
-HTML / CSS / Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / OneSignal API
+HTML / CSS / Ruby / Ruby on Rails / jquery / MySQL / GitHub / Heroku / Visual Studio Code / Trello / OneSignal API
 <br>
 
 # 課題や今後実装したい機能
-- 非同期通信を行えるようにし、投稿時のストレスを減らす
 - アプリから直接写真を撮影できる仕様にする
 - 通知設定の細かな設定
 - 合計金額を表示できるような設定を作る
