@@ -29,6 +29,7 @@ RSpec.describe 'Rooms', type: :system do
    click_on('作成')
 
    # 作成したグループルームへ遷移する
+   binding.pry
    visit room_messages_path(@room.id)
 
    # 投稿情報を5つDBに追加する
@@ -37,7 +38,7 @@ RSpec.describe 'Rooms', type: :system do
    #「チャットを終了する」ボタンをクリックすることで、作成した5つのメッセージも削除されることを確認する
    expect{
     find_link(href: room_path(@room_user.room)).click
-  }.to change{ @room_user.room.messages.count }.by(-2)
+  }.to change { @room_user.room.messages.count }.by(-2)
 
     # トップページに遷移していることを確認する
    expect(current_path).to eq root_path
